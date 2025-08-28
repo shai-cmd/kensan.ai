@@ -1,89 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kensan AI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Kensan AI - Digital Workforce for micro-Enterprise</title>
+    <meta
+      name="title"
+      content="Kensan AI - Digital Workforce for micro-Enterprise"
+    />
+    <meta
+      name="description"
+      content="Replace every low-value minute with autonomous AI. Kensan AI provides intelligent automation solutions for micro-enterprises to boost productivity and efficiency."
+    />
+    <meta
+      name="keywords"
+      content="AI automation, digital workforce, micro-enterprise, artificial intelligence, business automation, productivity tools, AI solutions"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Kensan AI" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kensan.ai/" />
+    <meta
+      property="og:title"
+      content="Kensan AI - Digital Workforce for micro-Enterprise"
+    />
+    <meta
+      property="og:description"
+      content="Replace every low-value minute with autonomous AI. Intelligent automation solutions for modern businesses."
+    />
+    <meta property="og:site_name" content="Kensan AI" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kensan.ai/" />
+    <meta
+      property="twitter:title"
+      content="Kensan AI - Digital Workforce for micro-Enterprise"
+    />
+    <meta
+      property="twitter:description"
+      content="Replace every low-value minute with autonomous AI. Intelligent automation solutions for modern businesses."
+    />
+
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://kensan.ai/" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Structured Data for AI Crawlers -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kensan AI",
+        "url": "https://kensan.ai",
+        "description": "Digital Workforce for micro-Enterprise. Replace every low-value minute with autonomous AI.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://kensan.ai/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "sameAs": [],
+        "foundingDate": "2024",
+        "additionalType": "AI Automation Company",
+        "keywords": "AI automation, digital workforce, micro-enterprise, artificial intelligence, business automation",
+        "slogan": "Replace every low-value minute with autonomous AI"
+      }
+    </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.8;
+        color: #e0e0e0;
+        background: #0a0a0a;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #ffffff;
+        font-weight: 700;
+        border-bottom: 1px solid #333;
+        padding-bottom: 0.5rem;
+      }
+
+      h1::before {
+        content: "# ";
+        color: #f00;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #888;
+        margin-bottom: 2rem;
+        font-style: italic;
+      }
+
+      .subtitle::before {
+        content: "_";
+      }
+
+      .subtitle::after {
+        content: "_";
+      }
+
+      .description {
+        font-size: 1rem;
+        color: #b0b0b0;
+        margin-bottom: 2rem;
+        line-height: 1.8;
+      }
+
+      .description::before {
+        content: "> ";
+        color: #666;
+      }
+
+      .coming-soon {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: #1a1a1a;
+        color: #66ff66;
+        border: 1px solid #333;
+        font-weight: 400;
+        font-size: 0.9rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .coming-soon::before {
+        content: "[ ";
+        color: #888;
+      }
+
+      .coming-soon::after {
+        content: " ]";
+        color: #888;
+      }
+
+      a {
+        color: #66b3ff;
+        text-decoration: none;
+        border-bottom: 1px dotted #66b3ff;
+      }
+
+      a:hover {
+        color: #99ccff;
+        border-bottom-color: #99ccff;
+      }
+
+      @media (max-width: 600px) {
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+          padding: 1rem;
         }
-        
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
-            margin: 1rem;
-        }
-        
+
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+          font-size: 1.5rem;
         }
-        
+
         .subtitle {
-            font-size: 1.5rem;
-            color: #666;
-            margin-bottom: 2rem;
+          font-size: 1rem;
         }
-        
-        .description {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 2rem;
-        }
-        
-        .coming-soon {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1.2rem;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Kensan AI</h1>
-        <p class="subtitle">Intelligent Solutions for Tomorrow</p>
-        <p class="description">
-            Welcome to Kensan AI. We're building the future of artificial intelligence.
-        </p>
-        <div class="coming-soon">Coming Soon</div>
+      <h1>Kensan AI</h1>
+      <p class="subtitle">Digital Workforce for micro-Enterprise</p>
+      <p class="description">
+        Replace every low-value minute with autonomous AI.
+      </p>
+      <div class="coming-soon">Coming Soon</div>
     </div>
-</body>
+  </body>
 </html>
